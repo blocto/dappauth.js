@@ -1,11 +1,10 @@
-[![Build Status](https://travis-ci.com/dapperlabs/dappauth.js.svg?branch=master)](https://travis-ci.com/dapperlabs/dappauth.js)
-[![Coverage Status](https://coveralls.io/repos/github/dapperlabs/dappauth.js/badge.svg?branch=master)](https://coveralls.io/github/dapperlabs/dappauth.js?branch=master)
 # dappauth.js
+dappauth.js is a tool that can verify EOA signature and smart contract signature (ERC1271).
 
 ## Usage
 ```js
   const Web3 = require('web3');
-  const DappAuth = require('@dapperlabs/dappauth');
+  const DappAuth = require('@blocto/dappauth');
 
   const dappAuth = new DappAuth(new Web3.providers.HttpProvider('http://localhost:8545'));
 
@@ -23,11 +22,9 @@
       );
 
       console.log(isAuthorizedSigner); // true
-    }
     } catch (e) {
       console.log(e);
     }
-
   }
 ```
 
